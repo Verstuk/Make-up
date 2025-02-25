@@ -33,7 +33,7 @@ export default function AboutSection() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <span className="text-primary font-playfair italic">Познакомимся поближе</span>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair">О визажисте</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 font-playfair">Обо мне</h2>
           <div className="w-20 h-1 bg-primary mx-auto"></div>
         </div>
 
@@ -53,7 +53,7 @@ export default function AboutSection() {
           </div>
 
           <div className="space-y-6">
-            <h3 className="text-2xl md:text-3xl font-bold font-playfair">Софья</h3>
+            <h3 className="text-2xl md:text-3xl font-bold font-playfair">Меня зовут Софья</h3>
             <p className="text-muted-foreground">
               Профессиональный визажист с более чем 5-летним опытом работы. Специализируюсь на создании уникальных
               образов для фотосессий, свадеб, особых случаев и повседневной жизни.
@@ -91,7 +91,7 @@ export default function AboutSection() {
               <div className="flex items-start gap-3">
                 <Clock className="text-primary h-6 w-6 mt-1" />
                 <div>
-                  <h4 className="font-bold font-playfair">10+ лет опыта</h4>
+                  <h4 className="font-bold font-playfair">5+ лет опыта</h4>
                   <p className="text-sm text-muted-foreground">В индустрии красоты</p>
                 </div>
               </div>

@@ -31,14 +31,14 @@ export default function HeroSection() {
           <div className={`space-y-6 ${isVisible ? "animate-fade-in" : "opacity-0"}`}>
             <span className="text-primary font-playfair italic text-xl">Профессиональный визажист</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-playfair">
-              Искусство макияжа для вашей <span className="pink-gradient-text">неповторимой красоты</span>
+              Искусство макияжа для вашей <span className="cognac-gradient-text">неповторимой красоты</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground">
               Профессиональный визажист с многолетним опытом. Создаю образы, которые подчеркивают вашу индивидуальность
               и красоту.
             </p>
             <div className="flex flex-wrap gap-4">
-              <Button size="lg" asChild className="font-playfair pink-glow">
+              <Button size="lg" asChild className="font-playfair cognac-glow">
                 <Link href="#contact">Записаться</Link>
               </Button>
               <Button variant="outline" size="lg" asChild className="font-playfair border-primary hover:bg-primary/10">

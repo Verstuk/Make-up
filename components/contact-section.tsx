@@ -43,7 +43,7 @@ export default function ContactSection() {
           style={{ animationDelay: "0s" }}
         ></div>
         <div
-          className="absolute top-40 -left-20 w-80 h-80 rounded-full bg-primary/5 animate-float"
+          className="absolute top-40 -left-20 w-80 h-80 rounded-full bg-primary/5 cognac-float"
           style={{ animationDelay: "1s" }}
         ></div>
         <div
@@ -133,7 +133,7 @@ export default function ContactSection() {
                 />
               </div>
 
-              <Button type="submit" className="w-full font-playfair pink-glow">
+              <Button type="submit" className="w-full font-playfair cognac-glow">
                 Отправить
               </Button>
             </form>

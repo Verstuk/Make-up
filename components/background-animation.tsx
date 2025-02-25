@@ -34,7 +34,14 @@ export default function BackgroundAnimation() {
     // Create particles
     const particles: Particle[] = []
     const particleCount = Math.min(100, window.innerWidth / 10) // Responsive particle count
-    const colors = ["#ffccd5", "#fbf8cc", "#ffffff", "#fde4cf", "#ffcfd2"]
+    const colors = [
+      "#8B4513", // Chocolate brown
+      "#B86F35", // Cognac
+      "#D4A76A", // Light cognac
+      "#F5E8D6", // Cream
+      "#6B4226", // Dark chocolate
+    ]
+
 
     for (let i = 0; i < particleCount; i++) {
       particles.push({
