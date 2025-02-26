@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-
+import axios from 'axios'
 import { useState } from "react"
 import { useInView } from "react-intersection-observer"
 import { Button } from "@/components/ui/button"
@@ -26,13 +26,46 @@ export default function ContactSection() {
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
+  const TELEGRAM_BOT_TOKEN = '7645072541:AAG2jeHlXaKwcYEEA_HVtQPcMvwCdlr3X5c';
+  const CHAT_ID = '-4735048861'; // Или ID чата, если это не публичная группа
+
+  const sendMessageToTelegram = async (message: string) => {
+    if (!message.trim()) {
+      console.error('Сообщение пустое, отправка невозможна.');
+      return;
+    }
+
+    const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+
+    try {
+      await axios.post(url, {
+        chat_id: CHAT_ID,
+        text: message,
+      });
+      console.log('Сообщение успешно отправлено в Telegram');
+    } catch (error) {
+      console.error('Ошибка при отправке сообщения:', error);
+    }
+  };
+
   const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault()
-    // Here you would typically send the form data to your backend
-    console.log("Form submitted:", formData)
-    alert("Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.")
-    setFormData({ name: "", email: "", phone: "", message: "" })
-  }
+    e.preventDefault();
+
+    // Логируем данные формы для проверки
+    console.log("Form data:", formData);
+
+    // Формируем сообщение для отправки в Telegram
+    const message = `Новое сообщение:\nИмя: ${formData.name}\nEmail: ${formData.email}\nТелефон: ${formData.phone}\nСообщение: ${formData.message}`;
+
+    // Отправляем сообщение в Telegram
+    sendMessageToTelegram(message);
+
+    // Показываем уведомление пользователю
+    alert("Спасибо за ваше сообщение! Мы свяжемся с вами в ближайшее время.");
+
+    // Очищаем данные формы
+    setFormData({ name: "", email: "", phone: "", message: "" });
+  };
 
   return (
     <section id="contact" className="py-20 bg-background relative overflow-hidden">
@@ -143,4 +176,3 @@ export default function ContactSection() {
     </section>
   )
 }
-
