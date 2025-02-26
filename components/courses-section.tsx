@@ -11,30 +11,30 @@ const courses = [
     title: "Базовый курс макияжа",
     description: "Научитесь основам макияжа и создавайте красивые повседневные образы.",
     image: "/placeholder.svg?height=400&width=600",
-    duration: "16 часов",
-    students: "10 человек",
-    startDate: "15 июня",
-    price: "15 000 ₽",
+    // duration: "16 часов",
+    // students: "10 человек",
+    // startDate: "15 июня",
+    // price: "15 000 ₽",
   },
   {
     id: 2,
     title: "Продвинутый курс",
     description: "Освойте сложные техники и научитесь создавать профессиональные образы.",
     image: "/placeholder.svg?height=400&width=600",
-    duration: "24 часа",
-    students: "8 человек",
-    startDate: "1 июля",
-    price: "25 000 ₽",
+    // duration: "24 часа",
+    // students: "8 человек",
+    // startDate: "1 июля",
+    // price: "25 000 ₽",
   },
   {
     id: 3,
     title: "Свадебный макияж",
     description: "Специализированный курс по созданию стойких и красивых свадебных образов.",
     image: "/placeholder.svg?height=400&width=600",
-    duration: "12 часов",
-    students: "6 человек",
-    startDate: "10 июля",
-    price: "18 000 ₽",
+    // duration: "12 часов",
+    // students: "6 человек",
+    // startDate: "10 июля",
+    // price: "18 000 ₽",
   },
 ]
 
@@ -72,7 +72,7 @@ export default function CoursesSection() {
                 <h3 className="text-xl font-bold mb-2">{course.title}</h3>
                 <p className="text-muted-foreground mb-4">{course.description}</p>
 
-                <div className="grid grid-cols-2 gap-3 mb-6">
+                {/* <div className="grid grid-cols-2 gap-3 mb-6">
                   <div className="flex items-center gap-2">
                     <Clock className="h-4 w-4 text-primary" />
                     <span className="text-sm">{course.duration}</span>
@@ -86,10 +86,10 @@ export default function CoursesSection() {
                     <span className="text-sm">{course.startDate}</span>
                   </div>
                   <div className="text-sm font-bold text-primary">{course.price}</div>
-                </div>
+                </div> */}
 
                 <Button className="w-full" asChild>
-                  <Link href="#contact">Записаться</Link>
+                  <Link href="#contact">Скоро</Link>
                 </Button>
               </div>
             </div>

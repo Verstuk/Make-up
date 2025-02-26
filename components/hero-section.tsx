@@ -18,7 +18,7 @@ export default function HeroSection() {
       <div
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: "url('/placeholder.svg?height=1080&width=1920')",
+          backgroundImage: "url('/back.jpeg?height=1080&width=1920')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           opacity: 0.7,
@@ -31,7 +31,7 @@ export default function HeroSection() {
           <div className={`space-y-6 ${isVisible ? "animate-fade-in" : "opacity-0"}`}>
             <span className="text-primary font-playfair italic text-xl">Профессиональный визажист</span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight font-playfair">
-              Искусство макияжа для вашей <span className="cognac-gradient-text">неповторимой красоты</span>
+              Искусство макияжа для вашей <span className="cognac-gradient-text font-light">неповторимой красоты</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground">
               Профессиональный визажист с многолетним опытом. Создаю образы, которые подчеркивают вашу индивидуальность
@@ -51,7 +51,7 @@ export default function HeroSection() {
             <div className="absolute -inset-4 bg-primary/20 rounded-2xl blur-xl transform rotate-6"></div>
             <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl relative">
               <img
-                src="/placeholder.svg?height=800&width=600"
+                src="/hero.jpeg?height=800&width=600"
                 alt="Профессиональный визажист за работой"
                 className="w-full h-full object-cover"
               />

@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-accent py-12">
       <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-64">
           <div>
             <h3 className="text-xl font-bold mb-4 font-playfair text-primary">Beauty Studio</h3>
             <p className="text-muted-foreground mb-4">

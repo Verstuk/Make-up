@@ -4,7 +4,7 @@ import { useState } from "react"
 import { useInView } from "react-intersection-observer"
 import { Button } from "@/components/ui/button"
 
-const categories = ["Все", "Свадебный", "Вечерний", "Дневной", "Фотосессии", "Брови"]
+const categories = ["Все", "Свадебный", "Вечерний", "Дневной", "Фэшн", "Брови"]
 
 const portfolioItems = [
   {
@@ -31,7 +31,7 @@ const portfolioItems = [
   {
     id: 4,
     title: "Макияж для фотосессии",
-    category: "Фотосессии",
+    category: "Фешн",
     description: "Стойкий макияж, который отлично смотрится на фотографиях",
     image: "/placeholder.svg?height=600&width=400",
   },

@@ -45,7 +45,7 @@ export default function AboutSection() {
             <div className="absolute inset-0 bg-primary/10 rounded-full blur-3xl transform -translate-x-4 translate-y-4"></div>
             <div className="aspect-square rounded-full overflow-hidden border-8 border-accent shadow-xl max-w-md mx-auto relative">
               <img
-                src="/placeholder.svg?height=600&width=600"
+                src="/face.jpg?height=600&width=600"
                 alt="Профессиональный визажист"
                 className="w-full h-full object-cover"
               />
@@ -83,7 +83,7 @@ export default function AboutSection() {
               <div className="flex items-start gap-3">
                 <Users className="text-primary h-6 w-6 mt-1" />
                 <div>
-                  <h4 className="font-bold font-playfair">1000+ клиентов</h4>
+                  <h4 className="font-bold font-playfair">100+ клиентов</h4>
                   <p className="text-sm text-muted-foreground">Довольных результатом</p>
                 </div>
               </div>
