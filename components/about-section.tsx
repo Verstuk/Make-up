@@ -45,7 +45,7 @@ export default function AboutSection() {
             <div className="absolute inset-0 bg-primary/10 rounded-full blur-3xl transform -translate-x-4 translate-y-4"></div>
             <div className="aspect-square rounded-full overflow-hidden border-8 border-accent shadow-xl max-w-md mx-auto relative">
               <img
-                src="/face.jpg?height=600&width=600"
+                src="/iam.jpg?height=600&width=600"
                 alt="Профессиональный визажист"
                 className="w-full h-full object-cover"
               />
@@ -55,9 +55,11 @@ export default function AboutSection() {
           <div className="space-y-6">
             <h3 className="text-2xl md:text-3xl font-bold font-playfair">Меня зовут Софья</h3>
             <p className="text-muted-foreground">
-              Профессиональный визажист с более чем 5-летним опытом работы. Специализируюсь на создании уникальных
+              Профессиональный визажист с более чем 5-летним опытом работы. Живу и работаю в основном в прекрасном городе Санкт-Петербург, но бывают выезды в другие города и страны. Специализируюсь на создании уникальных
               образов для фотосессий, свадеб, особых случаев и повседневной жизни.
             </p>
+            <p className="text-muted-foreground">Специализируюсь на создании уникальных
+            образов для фотосессий, свадеб, особых случаев и повседневной жизни.</p>
             <p className="text-muted-foreground">
               Моя философия — подчеркнуть естественную красоту каждого клиента, создавая образы, которые отражают их
               индивидуальность. Я постоянно совершенствую свои навыки, изучая новые техники и тренды в мире макияжа.
