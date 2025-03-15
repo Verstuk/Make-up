@@ -34,7 +34,8 @@ export default function HeroSection() {
               Искусство макияжа для вашей <span className="cognac-gradient-text font-light">неповторимой красоты</span>
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground">
-              Профессиональный визажист с многолетним опытом. Создаю образы, которые подчеркивают вашу индивидуальность
+              Профессиональный визажист с многолетним опытом.
+              <br />Создаю образы, которые подчеркивают вашу индивидуальность
               и красоту.
             </p>
             <div className="flex flex-wrap gap-4">
