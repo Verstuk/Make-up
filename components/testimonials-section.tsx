@@ -8,35 +8,35 @@ import { Button } from "@/components/ui/button"
 const testimonials = [
   {
     id: 1,
-    name: "Елена Смирнова",
-    role: "Невеста",
+    name: "Вероника",
+    // role: "Невеста",
     content:
-      "Софья создала для меня идеальный свадебный образ! Макияж держался весь день и отлично выглядел на фотографиях. Очень рекомендую!",
+      "Мне вообще очень понравилось. Все супер красиво и цвет супер. Брови даже непричесанные выглядят аккуратно. И с тобой работать супер комфортно",
     rating: 5,
-    image: "/placeholder.svg?height=100&width=100",
+    image: "./veronika.jpg",
   },
   {
     id: 2,
-    name: "Мария Петрова",
-    role: "Модель",
+    name: "Эрика",
+    // role: "Модель",
     content:
-      "Работаю с Софьей уже несколько лет на различных фотосессиях. Она настоящий профессионал, который всегда знает, какой макияж подойдет для конкретной концепции съемки.",
+      "Спасибо большое! Я вчера наконец-то смогла нарисовать с первого раза себе стрелки, никогда обычно не выходило.",
     rating: 5,
     image: "/placeholder.svg?height=100&width=100",
   },
   {
     id: 3,
-    name: "Ольга Иванова",
-    role: "Клиент",
+    name: "Алеся",
+    // role: "Клиент",
     content:
-      "Обратилась к Соне для создания вечернего образа на корпоратив. Результат превзошел все ожидания! Буду обращаться снова и рекомендовать друзьям.",
+      "В процессе было комфортно Макияж очень понравился, особенно люблю когда мне контурируют нос. До позднего вечера все держалось, никуда не утекло, хотя я гуляла под снегопадом)",
     rating: 5,
-    image: "/placeholder.svg?height=100&width=100",
+    image: "./alesya.jpg",
   },
   {
     id: 4,
-    name: "Наталья Козлова",
-    role: "Выпускница курса",
+    name: "Наталья",
+    // role: "Выпускница курса",
     content:
       "Прошла базовый курс макияжа у Софьи. Очень доступно объясняет, делится профессиональными секретами. Теперь я могу делать себе макияж сама!",
     rating: 5,
@@ -44,8 +44,8 @@ const testimonials = [
   },
   {
     id: 5,
-    name: "Екатерина Соколова",
-    role: "Клиент",
+    name: "Екатерина",
+    // role: "Клиент",
     content:
       "Сонечька создала для меня потрясающий образ на день рождения. Все гости делали комплименты. Спасибо за профессионализм!",
     rating: 4,
@@ -112,7 +112,7 @@ export default function TestimonialsSection() {
                     </div>
                     <div>
                       <h4 className="font-bold">{testimonial.name}</h4>
-                      <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                      {/* <p className="text-sm text-muted-foreground">{testimonial.role}</p> */}
                     </div>
                   </div>
                   <p className="text-muted-foreground mb-4">{testimonial.content}</p>
@@ -160,7 +160,7 @@ export default function TestimonialsSection() {
                 </div>
                 <div>
                   <h4 className="font-bold">{testimonials[currentIndex].name}</h4>
-                  <p className="text-sm text-muted-foreground">{testimonials[currentIndex].role}</p>
+                  {/* <p className="text-sm text-muted-foreground">{testimonials[currentIndex].role}</p> */}
                 </div>
               </div>
               <p className="text-muted-foreground mb-4">{testimonials[currentIndex].content}</p>

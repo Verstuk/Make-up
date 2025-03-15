@@ -10,7 +10,7 @@ const courses = [
     id: 1,
     title: "Базовый курс макияжа",
     description: "Научитесь основам макияжа и создавайте красивые повседневные образы.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/6.jpeg?height=400&width=600",
     // duration: "16 часов",
     // students: "10 человек",
     // startDate: "15 июня",
@@ -20,22 +20,22 @@ const courses = [
     id: 2,
     title: "Продвинутый курс",
     description: "Освойте сложные техники и научитесь создавать профессиональные образы.",
-    image: "/placeholder.svg?height=400&width=600",
+    image: "/5.jpeg?height=400&width=600",
     // duration: "24 часа",
     // students: "8 человек",
     // startDate: "1 июля",
     // price: "25 000 ₽",
   },
-  {
-    id: 3,
-    title: "Свадебный макияж",
-    description: "Специализированный курс по созданию стойких и красивых свадебных образов.",
-    image: "/placeholder.svg?height=400&width=600",
-    // duration: "12 часов",
-    // students: "6 человек",
-    // startDate: "10 июля",
-    // price: "18 000 ₽",
-  },
+  // {
+  //   id: 3,
+  //   title: "Свадебный макияж",
+  //   description: "Специализированный курс по созданию стойких и красивых свадебных образов.",
+  //   image: "/placeholder.svg?height=400&width=600",
+  //   // duration: "12 часов",
+  //   // students: "6 человек",
+  //   // startDate: "10 июля",
+  //   // price: "18 000 ₽",
+  // },
 ]
 
 export default function CoursesSection() {
@@ -46,7 +46,7 @@ export default function CoursesSection() {
 
   return (
     <section id="courses" className="py-20 bg-accent">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 justify-center items-center">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Курсы макияжа</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
@@ -57,7 +57,7 @@ export default function CoursesSection() {
 
         <div
           ref={ref}
-          className={`grid md:grid-cols-2 lg:grid-cols-3 gap-8 ${inView ? "animate-fade-in" : "opacity-0"}`}
+          className={`grid md:grid-cols-2 lg:grid-cols-2 gap-8 ${inView ? "animate-fade-in" : "opacity-0"}`}
         >
           {courses.map((course) => (
             <div key={course.id} className="course-card bg-white rounded-xl overflow-hidden shadow-lg">
@@ -89,7 +89,7 @@ export default function CoursesSection() {
                 </div> */}
 
                 <Button className="w-full" asChild>
-                  <Link href="#contact">Скоро</Link>
+                  <Link href="#contact">Записывайтесь</Link>
                 </Button>
               </div>
             </div>
