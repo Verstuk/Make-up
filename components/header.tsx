@@ -52,15 +52,15 @@ export default function Header() {
 
           {/* Social Media Icons */}
           <div className="flex items-center space-x-3">
-            <a href="#" className="social-icon hover:text-primary transition-colors">
+            <a href="https://www.instagram.com/murmake_up?igsh=MXJhcmhodTJzM2JpcQ==" className="social-icon hover:text-primary transition-colors">
               <Instagram className="h-5 w-5" />
             </a>
-            <a href="#" className="social-icon hover:text-primary transition-colors">
+            {/* <a href="#" className="social-icon hover:text-primary transition-colors">
               <Facebook className="h-5 w-5" />
             </a>
             <a href="#" className="social-icon hover:text-primary transition-colors">
               <Youtube className="h-5 w-5" />
-            </a>
+            </a> */}
           </div>
 
           <Link href="#contact">

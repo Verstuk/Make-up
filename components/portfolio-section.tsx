@@ -44,10 +44,31 @@ const portfolioItems = [
   },
   {
     id: 6,
-    title: "Вечерний выход",
-    category: "Вечерний",
+    title: "Яркий образ",
+    category: "Фэшн",
     description: "Гламурный образ для вечеринки",
     image: "/3.jpeg?height=600&width=400",
+  },
+  {
+    id: 7,
+    title: "Для прекрасного вечера",
+    category: "Вечерний",
+    description: "Гламурный образ для вечеринки",
+    image: "/ev1.jpg?height=600&width=400",
+  },
+  {
+    id: 8,
+    title: "Прекрачный дневной",
+    category: "Дневной",
+    description: "Выглядеть шикарно",
+    image: "/m1.jpg?height=600&width=400",
+  },
+  {
+    id: 9,
+    title: "Свадебный",
+    category: "Свадебный",
+    description: "Гламурный образ для торжественного события",
+    image: "/mr1.jpeg?height=600&width=400",
   },
 ]
 

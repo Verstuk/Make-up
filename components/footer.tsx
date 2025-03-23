@@ -13,15 +13,15 @@ export default function Footer() {
               и красоту.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="social-icon text-primary">
+              <a href="https://www.instagram.com/murmake_up?igsh=MXJhcmhodTJzM2JpcQ==" className="social-icon text-primary">
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="social-icon text-primary">
+              {/* <a href="#" className="social-icon text-primary">
                 <Facebook className="h-5 w-5" />
               </a>
               <a href="#" className="social-icon text-primary">
                 <Youtube className="h-5 w-5" />
-              </a>
+              </a> */}
             </div>
           </div>
 
